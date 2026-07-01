@@ -1,0 +1,22 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=k	G=VAR
+++D=STRING[2]	N=CharofMessage	G=VAR
+++D=STRING[256]	N=sb1	G=VAR
+++D=STRING[256]	N=sb2	G=VAR
+++D=STRING[256]	N=sbOut	G=VAR
+++D=ARRAY[0..5,0..5] OF STRING[2]	N=KeyMatrix	G=VAR
+++D=BOOL	N=HasGotChar	G=VAR
+++D=UINT	N=i	G=VAR
+++D=UINT	N=j	G=VAR
+++D=UINT	N=r	G=VAR
+++D=UINT	N=c	G=VAR
+++D=UINT	N=splitNum	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=STRING[256]	N=textIn	Ord=1	G=VAR_INPUT
+++D=BOOL	N=encrypt	Ord=2	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=STRING[256]	N=BifidCipher	G=RETURN

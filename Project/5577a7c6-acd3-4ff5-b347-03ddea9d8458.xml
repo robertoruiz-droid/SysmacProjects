@@ -1,0 +1,87 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BOOL	N=RunFW	G=VAR
+++D=BOOL	N=RunRW	G=VAR
+++D=BOOL	N=S3	G=VAR
+++D=BOOL	N=S4	G=VAR
+++D=BOOL	N=S5	G=VAR
+++D=BOOL	N=S6	G=VAR
+++D=BOOL	N=S7	G=VAR
+++D=BOOL	N=S8	G=VAR
+++D=BOOL	N=Ext_Fault	G=VAR
+++D=BOOL	N=Rst_Fault	G=VAR
+++D=M1_Crtl	N=Inv_M1	G=VAR
+++D=BOOL	N=Enable_M1	G=VAR
+++D=LREAL	N=M1_Posicion_LREAL	G=VAR
+++D=BOOL	N=Seguimiento	IV=True	G=VAR
+++D=MC_MoveAbsolute	N=I_MoveAbs	G=VAR
+++D=MC_MoveAbsolute	N=I_MoveAbsY	G=VAR
+++D=BOOL	N=Aux_MoveX	G=VAR
+++D=LREAL	N=EncoderPLC	G=VAR
+++D=RAND	N=Random	G=VAR
+++D=LREAL	N=Offset	G=VAR
+++D=TON	N=TimerRand	G=VAR
+++D=BOOL	N=T_Q	G=VAR
+++D=BOOL	N=T_Exe	G=VAR
+++D=LREAL	N=Offset_Encoder	G=VAR
+++D=TIME	N=T_ET	G=VAR
+++D=BOOL	N=Realizar_Preset	G=VAR
+++D=INT	N=EtapaPreset	G=VAR
+++D=BOOL	N=Home	G=VAR
+++D=BOOL	N=Virtual_Set_Position_EXE	G=VAR
+++D=MC_SetPosition	N=I_SetPosition	G=VAR
+++D=INT	N=Contador	G=VAR
+++D=DINT	N=UltimoCiclo	G=VAR
+++D=BOOL	N=Sumar_continuo	G=VAR
+++D=BOOL	N=Sumar_InicioMov	G=VAR
+++D=BOOL	N=Sumar_FinalMov	G=VAR
+++D=F_TRIG	N=FinalMov	G=VAR
+++D=R_TRIG	N=InicioMov	G=VAR
+++D=BOOL	N=FinalMovQ	G=VAR
+++D=BOOL	N=InicioMovQ	G=VAR
+++D=LREAL	N=Offset_Inicio	G=VAR
+++D=LREAL	N=Offset_final	G=VAR
+++D=LREAL	N=PosicionSetPointVirtual	G=VAR
+++D=BOOL	N=LanzarMovimiento	G=VAR
+++D=BOOL	N=Updated	G=VAR
+++D=LREAL	N=Distancia_Ultimo_Movimiento	G=VAR
+++D=BOOL	N=UseEncoder	G=VAR
+++D=BOOL	N=Encoder_Set_Position_EXE	G=VAR
+++D=MC_SetPosition	N=I_SetPositionEncoder	G=VAR
+++D=LREAL	N=PosicionSetPointEncoder	G=VAR
+++D=BOOL	N=Seguir_Encoder	G=VAR
+++D=BOOL	N=ExeCAM	G=VAR
+++D=MC_CamIn	N=I_CAM	G=VAR
+++D=BOOL	N=ExeMoveVel	G=VAR
+++D=MC_MoveVelocity	N=I_MoveVel	G=VAR
+++D=BOOL	N=VirtualCAM_Set_Position_EXE	G=VAR
+++D=MC_SetPosition	N=I_SetPositionVirtualCAm	G=VAR
+++D=BOOL	N=VirtualCAM_Home_EXE	G=VAR
+++D=MC_Home	N=I_Home	G=VAR
+++D=BOOL	N=Master_Encoder	G=VAR
+++D=BOOL	N=Master_Cam	G=VAR
+++D=BOOL	N=Seguir_Cam	G=VAR
+++D=BOOL	N=Master_VirtualAxis	G=VAR
+++D=BOOL	N=Seguir_MasterAxis	G=VAR
+++D=MC_CamOut	N=I_CAmOut	Ord=1	G=VAR	AOE=1
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=WORD	N=M1_Command	G=VAR_EXTERNAL
+++D=DINT	N=M1_Posicion	G=VAR_EXTERNAL
+++D=INT	N=M1_position_ValueMSB	G=VAR_EXTERNAL
+++D=UINT	N=M1_position_ValueLSB	G=VAR_EXTERNAL
+++D=WORD	N=M1_Status	G=VAR_EXTERNAL
+++D=UINT	N=M1_Digital_Inputs	G=VAR_EXTERNAL
+++D=UINT	N=M1_FrequencyRefderence	G=VAR_EXTERNAL
+++D=LREAL	N=Velocidad	G=VAR_EXTERNAL
+++D=LREAL	N=Posicion	G=VAR_EXTERNAL
+++D=LREAL	N=Acceleracion	G=VAR_EXTERNAL
+++D=LREAL	N=Deceleracion	G=VAR_EXTERNAL
+++D=LREAL	N=Jerk	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=VirtualX	Const=1	G=VAR_EXTERNAL
+++D=UINT	N=M1_Presetposition_ValueLSB	G=VAR_EXTERNAL
+++D=INT	N=M1_Presetposition_ValueMSB	G=VAR_EXTERNAL
+++D=BOOL	N=Reset	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=Encoder_Axis	Const=1	G=VAR_EXTERNAL
+++D=_sAXIS_REF	N=VirtualCAM	Const=1	G=VAR_EXTERNAL
+++D=ARRAY[0..50000] OF _sMC_CAM_REF	N=CamProfile0	G=VAR_EXTERNAL

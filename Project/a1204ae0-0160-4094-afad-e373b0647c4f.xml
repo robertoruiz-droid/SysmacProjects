@@ -1,0 +1,49 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=INT	N=ConnectStatus	IV=0	G=VAR
+++D=ATC_E\FCL\PID	N=PIDfb	G=VAR
+++D=STRING[256]	N=ProductCode	IV='1489'	Const=1	G=VAR
+++D=BOOL	N=Done	G=VAR
+++D=BOOL	N=IsProtected_SLA	G=VAR
+++D=BYTE	N=c_byAppID	IV=16#81	Const=1	G=VAR
+++D=STRING[256]	N=MAC	G=VAR
+++D=BOOL	N=Busy_SLA	G=VAR
+++D=BOOL	N=Error_SLA	G=VAR
+++D=WORD	N=ErrorID_SLA	G=VAR
+++D=DWORD	N=ErrorIDEx_SLA	G=VAR
+++D=ATC_E\FCL\Internals\SLA	N=SLA_Call	G=VAR
+++D=TON	N=fbL	G=VAR
+++D=BOOL	N=xETr	G=VAR
+++D=BOOL	N=xTr	G=VAR
+++D=LREAL	N=lrTaskCycle	G=VAR	Com=Task cycle in seconds
+++D=LREAL	N=lrMasterPos	G=VAR
+++D=LREAL	N=lrOldMasterPos	G=VAR
+++D=LREAL	N=lrSlavePos	G=VAR
+++D=LREAL	N=lrOldSlavePos	G=VAR
+++D=LREAL	N=lrHalfModulo	G=VAR
+++D=LREAL	N=lrDeltaMaster	G=VAR
+++D=LREAL	N=lrDeltaSlave	G=VAR
+++D=LREAL	N=lrPIDSpeedOutput	G=VAR
+++D=LREAL	N=lrSpdSign	G=VAR
+++D=LREAL	N=lrSpeedAfterLimit	G=VAR
+++D=LREAL	N=lrFollowingError	G=VAR
+++D=LREAL	N=lrFollowErrorCycles	G=VAR	Com=Used for calculating the "distance" (following error) between master and slave in rotay mode.
+++D=BOOL	N=xSpeedLimitReached	G=VAR
+++D=ATC_E\FCL\Internals\FB_ComposeErrorIDEx	N=fbComposeErrrorIDEx	G=VAR
+++D=ATC_E\FCL\ST_CountCfg	N=stCountCfg	G=VAR	Com=Temporal CountCfg, read when FB is enabled.
+++D=WORD	N=wExtErrorID	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=STRING[1986]	N=Key	Ord=1	G=VAR_INPUT	Com=License key (trial period: 2h)
+++D=LREAL	N=ReferencePos	Ord=2	G=VAR_INPUT	Com=Position reference (position to follow)
+++D=LREAL	N=SlavePos	Ord=3	G=VAR_INPUT	Com=Position feedback
+++D=ATC_E\FCL\ST_FCLCfg	N=Cfg	Ord=4	G=VAR_INPUT	Com=Configuration parameters
+++D=BOOL	N=Enabled	Ord=5	G=VAR_OUTPUT
+++D=LREAL	N=Speed	Ord=6	G=VAR_OUTPUT
+++D=ATC_E\FCL\ST_FCLStatus	N=Status	Ord=7	G=VAR_OUTPUT	Com=Status structure
+++D=BOOL	N=Error	Ord=8	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=9	G=VAR_OUTPUT
+++D=DWORD	N=ErrorIDEx	Ord=10	G=VAR_OUTPUT
+++D=BOOL	N=IsLicensed	Ord=11	G=VAR_OUTPUT	Com=TRUE: Key is a valid, FALSE: invalid Key
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

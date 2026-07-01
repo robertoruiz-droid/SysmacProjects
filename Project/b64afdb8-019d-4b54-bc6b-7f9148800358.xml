@@ -1,0 +1,52 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BYTE	N=c_byAppID	IV=16#81	Const=1	G=VAR
+++D=DINT	N=oldPositionValue	G=VAR
+++D=BOOL	N=oldHome	G=VAR
+++D=STRING[256]	N=ProductCode	IV='1489'	Const=1	G=VAR
+++D=BOOL	N=Done	G=VAR
+++D=BOOL	N=IsProtected_SLA	G=VAR
+++D=STRING[256]	N=MAC	G=VAR
+++D=BOOL	N=Busy_SLA	G=VAR
+++D=BOOL	N=Error_SLA	G=VAR
+++D=WORD	N=ErrorID_SLA	G=VAR
+++D=DWORD	N=ErrorIDEx_SLA	G=VAR
+++D=BOOL	N=OldEnable	G=VAR
+++D=ATC_E\FCL\Internals\SLA	N=SLA_Call	G=VAR
+++D=TON	N=fbL	G=VAR
+++D=BOOL	N=xETr	G=VAR
+++D=BOOL	N=xTr	G=VAR
+++D=DINT	N=diDiffEnc	G=VAR
+++D=DINT	N=diPosAcc	G=VAR
+++D=DINT	N=diHalfEncRange	G=VAR
+++D=DINT	N=diDiffEnc2	G=VAR
+++D=DINT	N=diEncRange	G=VAR
+++D=DINT	N=diPosRef	G=VAR
+++D=DINT	N=diAuxPos	G=VAR
+++D=LREAL	N=lrCycles	G=VAR
+++D=LREAL	N=lrCalcPos	G=VAR
+++D=LREAL	N=lrDeltaCalc	G=VAR
+++D=LREAL	N=lrOldCalcPos	G=VAR
+++D=LREAL	N=lrPosOffset	G=VAR
+++D=LREAL	N=lrBackupOutPos	R=1	G=VAR
+++D=DINT	N=diBackupInPos	R=1	G=VAR
+++D=DINT	N=diDeltaInit	G=VAR
+++D=LREAL	N=lrDeltaInit	G=VAR
+++D=ATC_E\FCL\Internals\FB_ComposeErrorIDEx	N=fbComposeErrrorIDEx	G=VAR
+++D=WORD	N=wExtErrorID	G=VAR
+++D=DINT	N=diDeltaInit2	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=DINT	N=PositionValue	Ord=1	G=VAR_INPUT
+++D=ATC_E\FCL\ST_EncoderCfg	N=EncCfg	Ord=2	G=VAR_INPUT
+++D=ATC_E\FCL\ST_CountCfg	N=CountCfg	Ord=3	G=VAR_INPUT
+++D=ATC_E\FCL\ST_UserRatio	N=RatioCfg	Ord=4	G=VAR_INPUT
+++D=BOOL	N=Home	Ord=5	G=VAR_INPUT
+++D=LREAL	N=HomeOffset	Ord=6	G=VAR_INPUT
+++D=BOOL	N=Enabled	Ord=7	G=VAR_OUTPUT
+++D=LREAL	N=Feedback	Ord=8	G=VAR_OUTPUT
+++D=BOOL	N=Error	Ord=9	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=10	G=VAR_OUTPUT
+++D=DWORD	N=ErrorIDEx	Ord=11	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

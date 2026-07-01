@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <data>
+    <ReferredLibrariesModel>
+      <ReferredLibraries>
+        <ReferredLibrary>
+          <data>
+            <LibraryModel>
+              <Name>ATC_E_FullClosedLoop</Name>
+              <NameSpace></NameSpace>
+              <Version>2.0.0</Version>
+              <Revision>1</Revision>
+              <LibraryId>162689c2-d65c-48f0-ad58-512f5762599e</LibraryId>
+              <Author>ATC_E</Author>
+              <Company></Company>
+              <DateCreated>2022-09-28T12:25:08.1743448+02:00</DateCreated>
+              <DateModified>2023-11-07T16:12:49.3046042+01:00</DateModified>
+              <Comment></Comment>
+              <Password></Password>
+              <AttachedFiles />
+              <AttachedFilesRelativePaths />
+              <PublicPartsNames>
+                <PublicName>ATC_E\FCL\InputNum</PublicName>
+                <PublicName>ATC_E\FCL\FullCloseLoopNum</PublicName>
+                <PublicName>ATC_E\FCL\SlipDetection</PublicName>
+                <PublicName>ATC_E\FCL\eEncoderMode</PublicName>
+                <PublicName>ATC_E\FCL\ST_EncoderCfg</PublicName>
+                <PublicName>ATC_E\FCL\ST_CountCfg</PublicName>
+                <PublicName>ATC_E\FCL\ST_UserRatio</PublicName>
+                <PublicName>ATC_E\FCL\ST_LimitsAndThresholds</PublicName>
+                <PublicName>ATC_E\FCL\ST_Gains</PublicName>
+                <PublicName>ATC_E\FCL\ST_FCLCfg</PublicName>
+                <PublicName>ATC_E\FCL\ST_FCLStatus</PublicName>
+              </PublicPartsNames>
+              <InternalPartsNames>
+                <InternalName>ATC_E\FCL\Internals\DecryptBifidCipherWithPadding</InternalName>
+                <InternalName>ATC_E\FCL\Internals\BifidCipher</InternalName>
+                <InternalName>ATC_E\FCL\Internals\StringToAscii</InternalName>
+                <InternalName>ATC_E\FCL\Internals\FC_Normalize</InternalName>
+                <InternalName>ATC_E\FCL\PID</InternalName>
+                <InternalName>ATC_E\FCL\Internals\SLA</InternalName>
+                <InternalName>ATC_E\FCL\Internals\GetHardwareID</InternalName>
+                <InternalName>ATC_E\FCL\Internals\FB_ComposeErrorIDEx</InternalName>
+              </InternalPartsNames>
+              <BuildDevice>
+                <Category>Controller</Category>
+                <Family>Nex</Family>
+                <FullModel>NJ501-1500</FullModel>
+                <MajorVersion>1</MajorVersion>
+                <MinorVersion>47</MinorVersion>
+                <Revision>0</Revision>
+                <DisplayVersion>1.47</DisplayVersion>
+                <Packages>
+                  <Package Name="Motion" Version="1.47" />
+                  <Package Name="OPCUA" Version="1.47" />
+                </Packages>
+              </BuildDevice>
+              <DependencyId>82e78379-4189-41be-ac38-e7254cc2157f</DependencyId>
+              <IsSource>true</IsSource>
+              <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+              <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+              <LibraryFilePath>C:\Users\maujor1\OneDrive - OMRON\OMRON_MAU\ATC PROJECTS\Full Close Loop\RELEASES\RELEASE V2.0\RELEASE V2.0.0\ATC_E_FullClosedLoop_v2_0_0.slr</LibraryFilePath>
+              <LibraryFileRelativePath>OneDrive - OMRON\OMRON_MAU\ATC PROJECTS\Full Close Loop\RELEASES\RELEASE V2.0\RELEASE V2.0.0\ATC_E_FullClosedLoop_v2_0_0.slr</LibraryFileRelativePath>
+              <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+              <AsOldVer>false</AsOldVer>
+              <SchemaVersion>3</SchemaVersion>
+              <Parameter1>false</Parameter1>
+              <ApplicationProductVersion>1.56.0.64011</ApplicationProductVersion>
+            </LibraryModel>
+          </data>
+        </ReferredLibrary>
+      </ReferredLibraries>
+      <BuildOption>
+        <data>
+          <LibraryModel>
+            <Name>Full_Close_Loop_Demo_v2_3</Name>
+            <NameSpace></NameSpace>
+            <Version>1.0.0</Version>
+            <Revision>1</Revision>
+            <LibraryId>00000000-0000-0000-0000-000000000000</LibraryId>
+            <Author>ruirob</Author>
+            <Company></Company>
+            <DateCreated>2023-10-23T15:34:48.4670119+02:00</DateCreated>
+            <DateModified>2023-10-23T15:34:48.4670119+02:00</DateModified>
+            <Comment></Comment>
+            <Password></Password>
+            <AttachedFiles />
+            <AttachedFilesRelativePaths />
+            <PublicPartsNames />
+            <InternalPartsNames />
+            <BuildDevice>
+              <Category></Category>
+              <Family></Family>
+              <FullModel></FullModel>
+              <MajorVersion>0</MajorVersion>
+              <MinorVersion>0</MinorVersion>
+              <Revision>0</Revision>
+              <DisplayVersion></DisplayVersion>
+              <Packages />
+            </BuildDevice>
+            <DependencyId>00000000-0000-0000-0000-000000000000</DependencyId>
+            <IsSource>false</IsSource>
+            <IsDisableSourceDisplay>true</IsDisableSourceDisplay>
+            <IsIncludeReferredLibraries>false</IsIncludeReferredLibraries>
+            <LibraryFilePath></LibraryFilePath>
+            <LibraryFileRelativePath></LibraryFileRelativePath>
+            <LibrarySourceControlRelativeFilePath></LibrarySourceControlRelativeFilePath>
+            <AsOldVer>false</AsOldVer>
+            <SchemaVersion>0</SchemaVersion>
+            <Parameter1>false</Parameter1>
+          </LibraryModel>
+        </data>
+      </BuildOption>
+      <ExcludedParts />
+      <InternalParts />
+      <LibraryTrackingIdConversionTable>
+        <LibraryEntityTrackingId>00000000-0000-0000-0000-000000000000</LibraryEntityTrackingId>
+        <PartTrackingIds />
+      </LibraryTrackingIdConversionTable>
+      <AreLibrariesIncluded>true</AreLibrariesIncluded>
+      <IsLibraryIdsDifferenceNotified>false</IsLibraryIdsDifferenceNotified>
+    </ReferredLibrariesModel>
+  </data>
+</data>
