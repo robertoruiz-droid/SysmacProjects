@@ -21,3 +21,12 @@ _EN=Variables
 ++D=UINT	N=M1_outputFrequency	AT=ECAT://node#16/Output Frequency Monitor	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Encoder_Axis	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=VirtualCAM	AT=MC://_MC_AX[2]	RO=1	Const=1	G=VAR_GLOBAL
+++D=BOOL	N=Master_Encoder	G=VAR_GLOBAL
+++D=BOOL	N=Master_Cam	G=VAR_GLOBAL
+++D=BOOL	N=Seguir_Cam	G=VAR_GLOBAL
+++D=LREAL	N=M1_Posicion_LREAL	G=VAR_GLOBAL
+++D=BOOL	N=LanzarMovimiento	G=VAR_GLOBAL
+++D=BOOL	N=ExeMoveVel	G=VAR_GLOBAL
+++D=BOOL	N=ExeCAM	G=VAR_GLOBAL
+++D=BOOL	N=INCAM	G=VAR_GLOBAL
+++D=BOOL	N=Master_VirtualAxis	G=VAR_GLOBAL
