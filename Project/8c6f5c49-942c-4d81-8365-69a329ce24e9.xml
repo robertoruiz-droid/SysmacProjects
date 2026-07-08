@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <MotionMonitorSettingDataModel>
+    <CanLoadOnlyCommandValue>true</CanLoadOnlyCommandValue>
+    <CoordinateSystem>Local</CoordinateSystem>
+    <TrajectoryConfigVisibleState>CommandValue</TrajectoryConfigVisibleState>
+    <CommandValueTrajectoryVisible>false</CommandValueTrajectoryVisible>
+    <ComboCommandValueTrajectoryColorSelectedIndex>0</ComboCommandValueTrajectoryColorSelectedIndex>
+    <FeedbackValueTrajectoryVisible>false</FeedbackValueTrajectoryVisible>
+    <ComboFeedbackValueTrajectoryColorSelectedIndex>1</ComboFeedbackValueTrajectoryColorSelectedIndex>
+    <MachineModelVisible>true</MachineModelVisible>
+    <MotionCommandValue>true</MotionCommandValue>
+    <MotionFeedbackValue>false</MotionFeedbackValue>
+    <SBXyzAxesVisible>true</SBXyzAxesVisible>
+    <SBScaleVisible>true</SBScaleVisible>
+    <IsLocalAxisVisible>true</IsLocalAxisVisible>
+  </MotionMonitorSettingDataModel>
+</data>

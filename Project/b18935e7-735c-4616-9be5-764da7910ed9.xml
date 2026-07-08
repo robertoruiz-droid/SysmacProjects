@@ -2,7 +2,7 @@
 <data>
   <DataTraceEnvironmentalModel>
     <CursorPosition>0</CursorPosition>
-    <StartTime>1970-01-01T14:23:55.36</StartTime>
+    <StartTime>1970-01-01T14:22:26.935</StartTime>
     <IsInAbsoluteTimeMode>false</IsInAbsoluteTimeMode>
     <SeriesAxisSettings>
       <SeriesAxis>
@@ -17,6 +17,16 @@
       </SeriesAxis>
       <SeriesAxis>
         <SeriesId>fcae7225-eb7f-4ded-b194-86e2098f808f</SeriesId>
+        <AxisMin>0</AxisMin>
+        <AxisMax>0</AxisMax>
+      </SeriesAxis>
+      <SeriesAxis>
+        <SeriesId>a80624ec-bbb1-4509-8b0b-ce4fd300d08b</SeriesId>
+        <AxisMin>0</AxisMin>
+        <AxisMax>0</AxisMax>
+      </SeriesAxis>
+      <SeriesAxis>
+        <SeriesId>9f39c22a-f8e6-4eb6-8b11-a17922636870</SeriesId>
         <AxisMin>0</AxisMin>
         <AxisMax>0</AxisMax>
       </SeriesAxis>

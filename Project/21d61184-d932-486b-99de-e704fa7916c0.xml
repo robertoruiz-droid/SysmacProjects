@@ -58,5 +58,43 @@
       <ValueOffset>0</ValueOffset>
       <WriteConfirmed>true</WriteConfirmed>
     </DataTraceSetItemModel>
+    <DataTraceSetItemModel>
+      <ModelType>Symbol</ModelType>
+      <Name>VirtualX.Act.Pos</Name>
+      <Id>a80624ec-bbb1-4509-8b0b-ce4fd300d08b</Id>
+      <SymbolId>entity://variables.global.28dfa0d4-dfa4-4d36-99ef-499f69ab816f/VirtualX.Act.Pos%3ALREAL</SymbolId>
+      <NaturalDataType>LREAL</NaturalDataType>
+      <Comment>Axis Variable Axis Current Value Actual Current Position</Comment>
+      <ColourA>255</ColourA>
+      <ColourR>0</ColourR>
+      <ColourG>255</ColourG>
+      <ColourB>127</ColourB>
+      <Historical>false</Historical>
+      <DataType>System.Double</DataType>
+      <Id>a80624ec-bbb1-4509-8b0b-ce4fd300d08b</Id>
+      <Visible>true</Visible>
+      <Offset>0</Offset>
+      <ValueOffset>0</ValueOffset>
+      <WriteConfirmed>true</WriteConfirmed>
+    </DataTraceSetItemModel>
+    <DataTraceSetItemModel>
+      <ModelType>Symbol</ModelType>
+      <Name>VirtualCAM.Act.Pos</Name>
+      <Id>9f39c22a-f8e6-4eb6-8b11-a17922636870</Id>
+      <SymbolId>entity://variables.global.28dfa0d4-dfa4-4d36-99ef-499f69ab816f/VirtualCAM.Act.Pos%3ALREAL</SymbolId>
+      <NaturalDataType>LREAL</NaturalDataType>
+      <Comment>Axis Variable Axis Current Value Actual Current Position</Comment>
+      <ColourA>255</ColourA>
+      <ColourR>255</ColourR>
+      <ColourG>127</ColourG>
+      <ColourB>80</ColourB>
+      <Historical>false</Historical>
+      <DataType>System.Double</DataType>
+      <Id>9f39c22a-f8e6-4eb6-8b11-a17922636870</Id>
+      <Visible>true</Visible>
+      <Offset>0</Offset>
+      <ValueOffset>0</ValueOffset>
+      <WriteConfirmed>true</WriteConfirmed>
+    </DataTraceSetItemModel>
   </DataTraceSetModel>
 </data>
