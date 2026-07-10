@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaServerSimSettings>
+  <PublishedVariables>
+    <Node Name="Global Variables" />
+    <Node Name="Primary Periodic Task">
+      <Node Name="PrimaryTask">
+        <Node Name="Program0" IsPublished="false" />
+      </Node>
+    </Node>
+    <OnlyNetworkPublishVariablesFlag Selected="False" />
+  </PublishedVariables>
+  <RoleSettings>
+    <FunctionBlockInstance />
+  </RoleSettings>
+  <StructNodeExpansion>True</StructNodeExpansion>
+  <ArrayNodeExpansion>True</ArrayNodeExpansion>
+</OpcUaServerSimSettings>

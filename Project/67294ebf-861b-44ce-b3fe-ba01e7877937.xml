@@ -1,0 +1,9 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
+++D=ST_industry4data	N=ProductionData	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=DINT	N=TotalOK_Accumulate	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=DINT	N=TotalNOK	NTP=PublicationOnly	G=VAR_GLOBAL
+++D=BOOL	N=EnvioMail	G=VAR_GLOBAL
+++D=BOOL	N=EnvioMail_In	G=VAR_GLOBAL
+++D=BOOL	N=EnvioMail_Out	G=VAR_GLOBAL

@@ -1,0 +1,37 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=uiStatus	G=VAR
+++D=Rand	N=random	G=VAR
+++D=LINT	N=uTime	G=VAR
+++D=TON	N=timeChange	G=VAR
+++D=DINT	N=uMode	G=VAR
+++D=e_lanbi_STATUS	N=eMachineStatus	G=VAR
+++D=DINT	N=n	G=VAR
+++D=BOOL	N=bOK	G=VAR
+++D=REAL	N=rTime	G=VAR
+++D=UINT	N=nCycles	G=VAR
+++D=ARRAY[0..19] OF STRING[50]	N=Order_Name	G=VAR
+++D=Rand	N=randOrder	G=VAR
+++D=BOOL	N=bNeworder	G=VAR
+++D=Rand	N=randProduction	G=VAR
+++D=BOOL	N=clk	G=VAR
+++D=Rand	N=randOKGN	G=VAR
+++D=Rand	N=randTime	G=VAR
+++D=UINT	N=NOKidx	G=VAR
+++D=BOOL	N=clk1s	G=VAR
+++D=DINT	N=TotalOK_Accumulate_1	G=VAR
+++D=INT	N=A	G=VAR
+++D=DINT	N=Total	G=VAR
+++D=DINT	N=Lectura	G=VAR
+++D=LREAL	N=RND	G=VAR
+++D=BOOL	N=Exe	G=VAR
+++D=Rand	N=randNG	G=VAR
+++D=INT	N=RND_INT	G=VAR
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
+++D=ST_industry4data	N=ProductionData	G=VAR_EXTERNAL
+++D=DINT	N=TotalOK_Accumulate	G=VAR_EXTERNAL
+++D=DINT	N=TotalNOK	G=VAR_EXTERNAL
+++D=BOOL	N=EnvioMail	G=VAR_EXTERNAL
+++D=BOOL	N=EnvioMail_In	G=VAR_EXTERNAL
+++D=BOOL	N=EnvioMail_Out	G=VAR_EXTERNAL
