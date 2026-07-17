@@ -1,6 +1,11 @@
 [SLWD version=1.0]
 _EN=Variables
 +GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
+++D=BOOL	N=GraficaVirtual10000	G=VAR_GLOBAL
+++D=BOOL	N=GraficaVirtual8000	G=VAR_GLOBAL
+++D=BOOL	N=GraficaVirtual4000	G=VAR_GLOBAL
+++D=BOOL	N=GraficaVirtual6000	G=VAR_GLOBAL
+++D=BOOL	N=GraficaVirtual2000	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=VirtualX	AT=MC://_MC_AX[1]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=UINT	N=M1_FrequencyRefderence	AT=ECAT://node#16/Frequency Reference	G=VAR_GLOBAL
 ++D=WORD	N=M1_Command	AT=ECAT://node#16/Command	G=VAR_GLOBAL
@@ -10,7 +15,7 @@ _EN=Variables
 ++D=INT	N=M1_position_ValueMSB	AT=ECAT://node#16/Output_S020 - Positioning Data via Communication (MSB)	G=VAR_GLOBAL
 ++D=UINT	N=M1_position_ValueLSB	AT=ECAT://node#16/Output_S021 - Positioning Data via Communication (LSB)	G=VAR_GLOBAL
 ++D=WORD	N=M1_Status	AT=ECAT://node#16/Status	G=VAR_GLOBAL
-++D=LREAL	N=Velocidad	IV=LREAL#10000	G=VAR_GLOBAL
+++D=LREAL	N=Velocidad	IV=LREAL#1000	G=VAR_GLOBAL
 ++D=LREAL	N=Posicion	G=VAR_GLOBAL
 ++D=LREAL	N=Acceleracion	G=VAR_GLOBAL
 ++D=LREAL	N=Deceleracion	G=VAR_GLOBAL
@@ -19,6 +24,7 @@ _EN=Variables
 ++D=UINT	N=M1_Presetposition_ValueLSB	AT=ECAT://node#16/Output_d241 - Preset Position (LSB)	G=VAR_GLOBAL
 ++D=BOOL	N=Reset	G=VAR_GLOBAL
 ++D=UINT	N=M1_outputFrequency	AT=ECAT://node#16/Output Frequency Monitor	G=VAR_GLOBAL
+++D=LREAL	N=WorkTravel	IV=100	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=Encoder_Axis	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=_sAXIS_REF	N=VirtualCAM	AT=MC://_MC_AX[2]	RO=1	Const=1	G=VAR_GLOBAL
 ++D=BOOL	N=Master_Encoder	G=VAR_GLOBAL
@@ -31,3 +37,36 @@ _EN=Variables
 ++D=BOOL	N=INCAM	G=VAR_GLOBAL
 ++D=BOOL	N=Master_VirtualAxis	G=VAR_GLOBAL
 ++D=BOOL	N=Stop	Ord=13	G=VAR_GLOBAL
+++D=LREAL	N=Conversion	G=VAR_GLOBAL
+++D=LREAL	N=PPR	IV=1000	G=VAR_GLOBAL
+++D=LREAL	N=Numerador	IV=1	G=VAR_GLOBAL
+++D=LREAL	N=Denominador	IV=1	G=VAR_GLOBAL
+++D=BOOL	N=Sumar_continuo	G=VAR_GLOBAL
+++D=BOOL	N=Sumar_FinalMov	G=VAR_GLOBAL
+++D=BOOL	N=Sumar_InicioMov	G=VAR_GLOBAL
+++D=LREAL	N=Offset_Inicio	G=VAR_GLOBAL
+++D=LREAL	N=Offset_final	G=VAR_GLOBAL
+++D=ARRAY[0..25000] OF LREAL	N=NA_VirtualX_Pos	Ord=4	G=VAR_GLOBAL
+++D=ARRAY[0..25000] OF LREAL	N=NA_M1_Pos	Ord=2	G=VAR_GLOBAL
+++D=ARRAY[0..25000] OF Lreal	N=M1_Pos	G=VAR_GLOBAL
+++D=ARRAY[0..25000] OF LREAL	N=VirtualX_Pos	G=VAR_GLOBAL
+++D=BOOL	N=RefrescarGrafica	G=VAR_GLOBAL
+++D=INT	N=I	G=VAR_GLOBAL
+++D=LREAL	N=PosFinaL	G=VAR_GLOBAL
+++D=BOOL	N=GraficarCam	G=VAR_GLOBAL
+++D=BOOL	N=ActualizarCam	Ord=1	G=VAR_GLOBAL
+++D=ARRAY[0..25000] OF LREAL	N=VirtualCAM_Pos	G=VAR_GLOBAL
+++D=ARRAY[0..25000] OF LREAL	N=NA_VirtualCAM_Pos	G=VAR_GLOBAL
+++D=BOOL	N=NAGrabar	G=VAR_GLOBAL
+++D=ARRAY[0..25000] OF LREAL	N=Encoder_Pos	G=VAR_GLOBAL
+++D=BOOL	N=ActualizarEncoder	G=VAR_GLOBAL
+++D=ARRAY[0..25000] OF LREAL	N=NA_EncoderAxis_Pos	G=VAR_GLOBAL
+++D=BOOL	N=Grabar	G=VAR_GLOBAL
+++D=LREAL	N=ValorMaxVirtualAxis	G=VAR_GLOBAL
+++D=ARRAY[0..25000] OF LREAL	N=M1_Vel	G=VAR_GLOBAL
+++D=ARRAY[0..25000] OF LREAL	N=NA_M1_Vel	G=VAR_GLOBAL
+++D=BOOL	N=Seguir_MasterAxis	G=VAR_GLOBAL
+++D=BOOL	N=Seguimiento	IV=True	G=VAR_GLOBAL
+++D=BOOL	N=RunRW	G=VAR_GLOBAL
+++D=BOOL	N=RunFW	G=VAR_GLOBAL
+++D=BOOL	N=Stop_Inverter	G=VAR_GLOBAL

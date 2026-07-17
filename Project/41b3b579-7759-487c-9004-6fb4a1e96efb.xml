@@ -1351,7 +1351,7 @@
   </NexAxisGeneralSetting>
   <NexAxisScaling>
     <NexAxisUnitsConversion>
-      <CurrentValue>EnumElement1</CurrentValue>
+      <CurrentValue>EnumElement2</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>EnumElement1</DefaultValue>
@@ -1365,7 +1365,7 @@
       </Options>
     </NexAxisUnitsConversion>
     <NexAxisUnitsNumerator>
-      <CurrentValue>10000</CurrentValue>
+      <CurrentValue>1000</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>10000</DefaultValue>
@@ -1379,7 +1379,7 @@
       <Options />
     </NexAxisUnitsNumeratorValue2>
     <NexAxisReducerUse>
-      <CurrentValue>EnumElement1</CurrentValue>
+      <CurrentValue>EnumElement2</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>EnumElement1</DefaultValue>
@@ -1389,14 +1389,14 @@
       </Options>
     </NexAxisReducerUse>
     <NexAxisUnitsDenominator>
-      <CurrentValue>10000</CurrentValue>
-      <IsEnabled>true</IsEnabled>
+      <CurrentValue>1000</CurrentValue>
+      <IsEnabled>false</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>10000</DefaultValue>
       <Options />
     </NexAxisUnitsDenominator>
     <NexAxisUnitsDenominatorValue2>
-      <CurrentValue>pulse/rev</CurrentValue>
+      <CurrentValue>mm/rev</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/rev</DefaultValue>
@@ -1410,21 +1410,21 @@
       <Options />
     </NexAxisPulseDenominator>
     <NexAxisPulseDenominatorValue2>
-      <CurrentValue>pulse/pulse</CurrentValue>
+      <CurrentValue>mm/pulse</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/pulse</DefaultValue>
       <Options />
     </NexAxisPulseDenominatorValue2>
     <NexAxisTravelDistancePerWorkRotation>
-      <CurrentValue>10000</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <CurrentValue>100</CurrentValue>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>10000</DefaultValue>
       <Options />
     </NexAxisTravelDistancePerWorkRotation>
     <NexAxisTravelDistancePerWorkRotationValue2>
-      <CurrentValue>pulse/rev</CurrentValue>
+      <CurrentValue>mm/rev</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/rev</DefaultValue>
@@ -1432,14 +1432,14 @@
     </NexAxisTravelDistancePerWorkRotationValue2>
     <NexAxisWorkGearRatio>
       <CurrentValue>1</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>1</DefaultValue>
       <Options />
     </NexAxisWorkGearRatio>
     <NexAxisMotorGearRatio>
       <CurrentValue>1</CurrentValue>
-      <IsEnabled>false</IsEnabled>
+      <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>1</DefaultValue>
       <Options />
@@ -1447,14 +1447,14 @@
   </NexAxisScaling>
   <NexAxisDynamics>
     <NexAxisMaxVelocity>
-      <CurrentValue>400000000</CurrentValue>
+      <CurrentValue>400000</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>400000000</DefaultValue>
       <Options />
     </NexAxisMaxVelocity>
     <NexAxisMaxVelocityValue2>
-      <CurrentValue>pulse/s</CurrentValue>
+      <CurrentValue>mm/s</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/s</DefaultValue>
@@ -1482,21 +1482,21 @@
       <Options />
     </NexAxisStartVelocity>
     <NexAxisStartVelocityValue2>
-      <CurrentValue>pulse/s</CurrentValue>
+      <CurrentValue>mm/s</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/s</DefaultValue>
       <Options />
     </NexAxisStartVelocityValue2>
     <NexAxisMaxJogVelocity>
-      <CurrentValue>1000000</CurrentValue>
+      <CurrentValue>100000</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>1000000</DefaultValue>
       <Options />
     </NexAxisMaxJogVelocity>
     <NexAxisMaxJogVelocityValue2>
-      <CurrentValue>pulse/s</CurrentValue>
+      <CurrentValue>mm/s</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/s</DefaultValue>
@@ -1510,7 +1510,7 @@
       <Options />
     </NexAxisMaxAcceleration>
     <NexAxisMaxAccelerationValue2>
-      <CurrentValue>pulse/s^2</CurrentValue>
+      <CurrentValue>mm/s^2</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/s^2</DefaultValue>
@@ -1538,7 +1538,7 @@
       <Options />
     </NexAxisMaxDeceleration>
     <NexAxisMaxDecelerationValue2>
-      <CurrentValue>pulse/s^2</CurrentValue>
+      <CurrentValue>mm/s^2</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/s^2</DefaultValue>
@@ -1615,7 +1615,7 @@
       <Options />
     </NexAxisInPositionBand>
     <NexAxisInPositionBandValue2>
-      <CurrentValue>pulse</CurrentValue>
+      <CurrentValue>mm</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse</DefaultValue>
@@ -1657,7 +1657,7 @@
       <Options />
     </NexAxisZeroPositionBand>
     <NexAxisZeroPositionBandValue2>
-      <CurrentValue>pulse</CurrentValue>
+      <CurrentValue>mm</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse</DefaultValue>
@@ -1793,7 +1793,7 @@
       <Options />
     </NexAxisPositiveSoftwareLimit>
     <NexAxisPositiveSoftwareLimitValue2>
-      <CurrentValue>pulse</CurrentValue>
+      <CurrentValue>mm</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse</DefaultValue>
@@ -1807,7 +1807,7 @@
       <Options />
     </NexAxisNegativeSoftwareLimit>
     <NexAxisNegativeSoftwareLimitValue2>
-      <CurrentValue>pulse</CurrentValue>
+      <CurrentValue>mm</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse</DefaultValue>
@@ -1821,7 +1821,7 @@
       <Options />
     </NexAxisFollowingErrorLimit>
     <NexAxisFollowingErrorLimitValue2>
-      <CurrentValue>pulse</CurrentValue>
+      <CurrentValue>mm</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse</DefaultValue>
@@ -1835,7 +1835,7 @@
       <Options />
     </NexAxisFollowingErrorAlarmLimit>
     <NexAxisFollowingErrorAlarmLimitValue2>
-      <CurrentValue>pulse</CurrentValue>
+      <CurrentValue>mm</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse</DefaultValue>
@@ -1921,7 +1921,7 @@
       <Options />
     </NexAxisHomingVelocity>
     <NexAxisHomingVelocityValue2>
-      <CurrentValue>pulse/s</CurrentValue>
+      <CurrentValue>mm/s</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/s</DefaultValue>
@@ -1935,7 +1935,7 @@
       <Options />
     </NexAxisHomingApproachVelocity>
     <NexAxisHomingApproachVelocityValue2>
-      <CurrentValue>pulse/s</CurrentValue>
+      <CurrentValue>mm/s</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/s</DefaultValue>
@@ -1949,7 +1949,7 @@
       <Options />
     </NexAxisHomingAcceleration>
     <NexAxisHomingAccelerationValue2>
-      <CurrentValue>pulse/s^2</CurrentValue>
+      <CurrentValue>mm/s^2</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/s^2</DefaultValue>
@@ -1963,7 +1963,7 @@
       <Options />
     </NexAxisHomingDeceleration>
     <NexAxisHomingDecelerationValue2>
-      <CurrentValue>pulse/s^2</CurrentValue>
+      <CurrentValue>mm/s^2</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/s^2</DefaultValue>
@@ -1977,7 +1977,7 @@
       <Options />
     </NexAxisHomingJerk>
     <NexAxisHomingJerkValue2>
-      <CurrentValue>pulse/s^3</CurrentValue>
+      <CurrentValue>mm/s^3</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/s^3</DefaultValue>
@@ -1991,7 +1991,7 @@
       <Options />
     </NexAxisOriginInputMaskAmount>
     <NexAxisOriginInputMaskAmountValue2>
-      <CurrentValue>pulse</CurrentValue>
+      <CurrentValue>mm</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse</DefaultValue>
@@ -2005,7 +2005,7 @@
       <Options />
     </NexAxisOriginPositionOffset>
     <NexAxisOriginPositionOffsetValue2>
-      <CurrentValue>pulse</CurrentValue>
+      <CurrentValue>mm</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse</DefaultValue>
@@ -2033,7 +2033,7 @@
       <Options />
     </NexAxisOriginCompensationValue>
     <NexAxisOriginCompensationValueValue2>
-      <CurrentValue>pulse</CurrentValue>
+      <CurrentValue>mm</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse</DefaultValue>
@@ -2047,7 +2047,7 @@
       <Options />
     </NexAxisCompensationVelocity>
     <NexAxisCompensationVelocityValue2>
-      <CurrentValue>pulse/s</CurrentValue>
+      <CurrentValue>mm/s</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse/s</DefaultValue>
@@ -2073,7 +2073,7 @@
       <Options />
     </NexAxisModuloMAXPosition>
     <NexAxisModuloMAXPositionValue2>
-      <CurrentValue>pulse</CurrentValue>
+      <CurrentValue>mm</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse</DefaultValue>
@@ -2087,7 +2087,7 @@
       <Options />
     </NexAxisModuloMINPosition>
     <NexAxisModuloMINPositionValue2>
-      <CurrentValue>pulse</CurrentValue>
+      <CurrentValue>mm</CurrentValue>
       <IsEnabled>true</IsEnabled>
       <IsVisible>true</IsVisible>
       <DefaultValue>pulse</DefaultValue>

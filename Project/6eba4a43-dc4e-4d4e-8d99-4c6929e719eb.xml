@@ -14,7 +14,7 @@
     <NexDataTraceTriggerModel>
       <Enabled>true</Enabled>
       <SymbolId>entity://variables.global.28dfa0d4-dfa4-4d36-99ef-499f69ab816f/ExeMoveVel%3ABOOL</SymbolId>
-      <SymbolName>ExeMoveVel</SymbolName>
+      <SymbolName>GraficaVirtual10000DenominadorNumeradorWorkTravelExeMoveVelWorkTravelNumeradorDenominadorGraficaVirtual10000</SymbolName>
       <Condition>BooleanRising</Condition>
       <Value></Value>
     </NexDataTraceTriggerModel>

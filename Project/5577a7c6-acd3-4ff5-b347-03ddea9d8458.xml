@@ -1,8 +1,6 @@
 [SLWD version=1.0]
 _EN=Variables
 +GN=VAR	GVT=DefaultGroup
-++D=BOOL	N=RunFW	G=VAR
-++D=BOOL	N=RunRW	G=VAR
 ++D=BOOL	N=S3	G=VAR
 ++D=BOOL	N=S4	G=VAR
 ++D=BOOL	N=S5	G=VAR
@@ -13,7 +11,6 @@ _EN=Variables
 ++D=BOOL	N=Rst_Fault	G=VAR
 ++D=M1_Crtl	N=Inv_M1	G=VAR
 ++D=BOOL	N=Enable_M1	G=VAR
-++D=BOOL	N=Seguimiento	IV=True	G=VAR
 ++D=MC_MoveAbsolute	N=I_MoveAbs	G=VAR
 ++D=MC_MoveAbsolute	N=I_MoveAbsY	G=VAR
 ++D=BOOL	N=Aux_MoveX	G=VAR
@@ -32,15 +29,10 @@ _EN=Variables
 ++D=MC_SetPosition	N=I_SetPosition	G=VAR
 ++D=INT	N=Contador	G=VAR
 ++D=DINT	N=UltimoCiclo	G=VAR
-++D=BOOL	N=Sumar_continuo	G=VAR
-++D=BOOL	N=Sumar_InicioMov	G=VAR
-++D=BOOL	N=Sumar_FinalMov	G=VAR
 ++D=F_TRIG	N=FinalMov	G=VAR
 ++D=R_TRIG	N=InicioMov	G=VAR
 ++D=BOOL	N=FinalMovQ	G=VAR
 ++D=BOOL	N=InicioMovQ	G=VAR
-++D=LREAL	N=Offset_Inicio	G=VAR
-++D=LREAL	N=Offset_final	G=VAR
 ++D=LREAL	N=PosicionSetPointVirtual	G=VAR
 ++D=BOOL	N=Updated	G=VAR
 ++D=LREAL	N=Distancia_Ultimo_Movimiento	G=VAR
@@ -55,7 +47,6 @@ _EN=Variables
 ++D=MC_SetPosition	N=I_SetPositionVirtualCAm	G=VAR
 ++D=BOOL	N=VirtualCAM_Home_EXE	G=VAR
 ++D=MC_Home	N=I_Home	G=VAR
-++D=BOOL	N=Seguir_MasterAxis	G=VAR
 ++D=MC_CamOut	N=I_CAmOut	G=VAR
 ++D=R_TRIG	N=RtrigMasterCAm	G=VAR
 ++D=F_TRIG	N=FtrigMasterCAm	G=VAR
@@ -74,9 +65,25 @@ _EN=Variables
 ++D=BOOL	N=CamReady	G=VAR
 ++D=bool	N=FtrigOrigen_Q	G=VAR
 ++D=R_TRIG	N=RtrigOrigen	G=VAR
-++D=BOOL	N=SecuenciaParada	Ord=1	G=VAR	AOE=1
-++D=R_TRIG	N=RtrigStop	Ord=2	G=VAR	AOE=1
-++D=F_TRIG	N=FtrigOrigen	Ord=3	G=VAR	AOE=1
+++D=BOOL	N=SecuenciaParada	G=VAR
+++D=R_TRIG	N=RtrigStop	G=VAR
+++D=F_TRIG	N=FtrigOrigen	G=VAR
+++D=LREAL	N=Posicion_en_mm	G=VAR
+++D=BOOL	N=unidades	G=VAR
+++D=LREAL	N=PosicionMovABS	G=VAR
+++D=LREAL	N=Velocity	G=VAR
+++D=BOOL	N=DesFinal	G=VAR
+++D=INT	N=L	G=VAR
+++D=LREAL	N=FactorReduccion	G=VAR
+++D=F_TRIG	N=FtrigGrabar	G=VAR
+++D=BOOL	N=NaGrabarFtrig	G=VAR
+++D=BOOL	N=FtrigGrabarQ	G=VAR
+++D=F_TRIG	N=FtrigSeguimiento	G=VAR
+++D=BOOL	N=FtrigSeguimiento_Q	G=VAR
+++D=R_TRIG	N=RtrigRunFW	G=VAR
+++D=BOOL	N=RtrigRunFW_Q	G=VAR
+++D=R_TRIG	N=RtrigRunRW	G=VAR
+++D=BOOL	N=RtrigRunRW_Q	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=WORD	N=M1_Command	G=VAR_EXTERNAL
 ++D=DINT	N=M1_Posicion	G=VAR_EXTERNAL
@@ -107,3 +114,39 @@ _EN=Variables
 ++D=BOOL	N=INCAM	G=VAR_EXTERNAL
 ++D=BOOL	N=Master_VirtualAxis	G=VAR_EXTERNAL
 ++D=BOOL	N=Stop	G=VAR_EXTERNAL
+++D=LREAL	N=Conversion	G=VAR_EXTERNAL
+++D=LREAL	N=PPR	G=VAR_EXTERNAL
+++D=LREAL	N=WorkTravel	G=VAR_EXTERNAL
+++D=LREAL	N=Numerador	G=VAR_EXTERNAL
+++D=LREAL	N=Denominador	G=VAR_EXTERNAL
+++D=BOOL	N=Sumar_continuo	G=VAR_EXTERNAL
+++D=BOOL	N=Sumar_FinalMov	G=VAR_EXTERNAL
+++D=BOOL	N=Sumar_InicioMov	G=VAR_EXTERNAL
+++D=LREAL	N=Offset_Inicio	G=VAR_EXTERNAL
+++D=LREAL	N=Offset_final	G=VAR_EXTERNAL
+++D=ARRAY[0..25000] OF LREAL	N=NA_VirtualX_Pos	G=VAR_EXTERNAL
+++D=ARRAY[0..25000] OF LREAL	N=NA_M1_Pos	G=VAR_EXTERNAL
+++D=ARRAY[0..25000] OF Lreal	N=M1_Pos	G=VAR_EXTERNAL
+++D=ARRAY[0..25000] OF LREAL	N=VirtualX_Pos	G=VAR_EXTERNAL
+++D=BOOL	N=RefrescarGrafica	G=VAR_EXTERNAL
+++D=INT	N=I	G=VAR_EXTERNAL
+++D=BOOL	N=GraficarCam	G=VAR_EXTERNAL
+++D=BOOL	N=ActualizarCam	G=VAR_EXTERNAL
+++D=ARRAY[0..25000] OF LREAL	N=VirtualCAM_Pos	G=VAR_EXTERNAL
+++D=BOOL	N=NAGrabar	G=VAR_EXTERNAL
+++D=ARRAY[0..25000] OF LREAL	N=Encoder_Pos	G=VAR_EXTERNAL
+++D=BOOL	N=ActualizarEncoder	G=VAR_EXTERNAL
+++D=BOOL	N=Grabar	G=VAR_EXTERNAL
+++D=LREAL	N=ValorMaxVirtualAxis	G=VAR_EXTERNAL
+++D=BOOL	N=GraficaVirtual8000	G=VAR_EXTERNAL
+++D=BOOL	N=GraficaVirtual10000	G=VAR_EXTERNAL
+++D=BOOL	N=GraficaVirtual6000	G=VAR_EXTERNAL
+++D=BOOL	N=GraficaVirtual4000	G=VAR_EXTERNAL
+++D=BOOL	N=GraficaVirtual2000	G=VAR_EXTERNAL
+++D=ARRAY[0..25000] OF LREAL	N=M1_Vel	G=VAR_EXTERNAL
+++D=UINT	N=M1_outputFrequency	G=VAR_EXTERNAL
+++D=BOOL	N=Seguir_MasterAxis	G=VAR_EXTERNAL
+++D=BOOL	N=Seguimiento	G=VAR_EXTERNAL
+++D=BOOL	N=RunFW	G=VAR_EXTERNAL
+++D=BOOL	N=RunRW	G=VAR_EXTERNAL
+++D=BOOL	N=Stop_Inverter	G=VAR_EXTERNAL
