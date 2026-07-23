@@ -17,8 +17,8 @@ _EN=Variables
 ++D=WORD	N=M1_Status	AT=ECAT://node#16/Status	G=VAR_GLOBAL
 ++D=LREAL	N=Velocidad	IV=LREAL#1000	G=VAR_GLOBAL
 ++D=LREAL	N=Posicion	G=VAR_GLOBAL
-++D=LREAL	N=Acceleracion	G=VAR_GLOBAL
-++D=LREAL	N=Deceleracion	G=VAR_GLOBAL
+++D=LREAL	N=Acceleracion	IV=1000	G=VAR_GLOBAL
+++D=LREAL	N=Deceleracion	IV=1000	G=VAR_GLOBAL
 ++D=LREAL	N=Jerk	G=VAR_GLOBAL
 ++D=INT	N=M1_Presetposition_ValueMSB	AT=ECAT://node#16/Output_d240 - Preset Position (MSB)	G=VAR_GLOBAL
 ++D=UINT	N=M1_Presetposition_ValueLSB	AT=ECAT://node#16/Output_d241 - Preset Position (LSB)	G=VAR_GLOBAL
@@ -70,3 +70,4 @@ _EN=Variables
 ++D=BOOL	N=RunRW	G=VAR_GLOBAL
 ++D=BOOL	N=RunFW	G=VAR_GLOBAL
 ++D=BOOL	N=Stop_Inverter	G=VAR_GLOBAL
+++D=UINT	N=M1_OutputCurrentMonitor	AT=ECAT://node#16/M011 - Output Current Monitor	G=VAR_GLOBAL
