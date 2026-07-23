@@ -14,7 +14,7 @@
     <NexDataTraceTriggerModel>
       <Enabled>true</Enabled>
       <SymbolId>entity://nextask.base.1b05ab00-4686-47b0-8b83-f51401080ab8/Program1/Aux_MoveX%3ABOOL</SymbolId>
-      <SymbolName>Program1.RtrigRunRWRtrigRunFWFtrigSeguimientoAux_MoveX</SymbolName>
+      <SymbolName>Program1.Aux_MoveX</SymbolName>
       <Condition>BooleanRising</Condition>
       <Value></Value>
     </NexDataTraceTriggerModel>
