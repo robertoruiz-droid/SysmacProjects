@@ -4,4 +4,5 @@ _EN=Variables
 ++D=BOOL	N=Prueba	G=VAR
 ++D=BOOL	N=Salida	G=VAR
 ++D=BOOL	N=Test2	G=VAR
+++D=BOOL	N=Pepe	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup

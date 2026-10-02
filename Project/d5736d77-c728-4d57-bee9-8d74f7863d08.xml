@@ -1,1 +1,1 @@
-﻿{"CLs":[{"__type":"LD","Var":"Prueba"},{"__type":"LD","Ix":1,"Var":"Test2","Y":1},{"__type":"LD","Ix":2,"Var":"Test2","Y":2},{"__type":"ST","Ix":3,"Var":"Salida","X":1}],"LRI":4,"RRI":5,"VLs":[{"Ix":6,"X":1},{"Ix":6,"X":1,"Y":1}]}
+﻿{"CLs":[{"__type":"LD","Var":"Prueba"},{"__type":"LD","Ix":1,"Var":"Test2","Y":1},{"__type":"LD","Ix":2,"Var":"Test2","Y":2},{"__type":"LD","Ix":3,"Var":"Pepe","Y":3},{"__type":"ST","Ix":4,"Var":"Salida","X":1}],"LRI":5,"RRI":6,"VLs":[{"Ix":7,"X":1},{"Ix":7,"X":1,"Y":1},{"Ix":7,"X":1,"Y":2}]}
