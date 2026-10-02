@@ -1,1 +1,1 @@
-﻿{"CLs":[{"__type":"LD","Var":"Prueba"},{"__type":"LD","Ix":1,"Var":"Test2","Y":1},{"__type":"ST","Ix":2,"Var":"Salida","X":1}],"LRI":3,"RRI":4,"VLs":[{"Ix":5,"X":1}]}
+﻿{"CLs":[{"__type":"LD","Var":"Prueba"},{"__type":"LD","Ix":1,"Var":"Test2","Y":1},{"__type":"LD","Ix":2,"Var":"Test2","Y":2},{"__type":"ST","Ix":3,"Var":"Salida","X":1}],"LRI":4,"RRI":5,"VLs":[{"Ix":6,"X":1},{"Ix":6,"X":1,"Y":1}]}
