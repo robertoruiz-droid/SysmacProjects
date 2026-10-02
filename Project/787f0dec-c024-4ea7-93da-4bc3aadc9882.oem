@@ -31,7 +31,7 @@
         <AccessInfos />
         <ChildEntities />
       </Entity>
-      <Entity type="Device" subtype="NJ501" id="8b929566-06b9-4eae-bc8b-7ad4927c833c" name="new_Controller_0" version="0" dateCreated="10/02/2026 11:09:38" dateLastModified="10/02/2026 11:09:39" trackingId="0e598683-e738-4a56-a7d0-385ca0fcce1a" hash="f4f2e416fa856f28aad64b9b6e634850" DHS="aeb6eaebed1b33e291a51e3b7989fd77" TH="534e177c254697a08cc4302ccf24e720">
+      <Entity type="Device" subtype="NJ501" id="8b929566-06b9-4eae-bc8b-7ad4927c833c" name="new_Controller_0" version="0" dateCreated="10/02/2026 11:09:38" dateLastModified="10/02/2026 11:09:39" trackingId="0e598683-e738-4a56-a7d0-385ca0fcce1a" hash="f4f2e416fa856f28aad64b9b6e634850" DHS="0528ca5e115751f11f0dca412f295623" TH="eea80116df40bc6bade0870793b1d599">
         <AccessInfos />
         <ChildEntities>
           <Entity type="Watch" subtype="" id="0c4f8917-eb57-4917-86dc-9cd6ee57ab08" name="Watch" version="0" dateCreated="10/02/2026 11:09:38" trackingId="ee98d5c8-54ce-43af-9f68-6225f0a83163">
@@ -168,9 +168,48 @@
             <AccessInfos />
             <ChildEntities />
           </Entity>
-          <Entity type="DataTraces" subtype="Nex" id="9a06963f-c25f-4ff1-98aa-847b52f1f80c" name="Data Trace Settings" version="0" dateCreated="10/02/2026 11:09:38" dateLastModified="10/02/2026 11:09:39" trackingId="751ef8e4-2ee9-4413-a3f0-9c87770adf81" DN="Data Trace Settings">
+          <Entity type="DataTraces" subtype="Nex" id="9a06963f-c25f-4ff1-98aa-847b52f1f80c" name="Data Trace Settings" version="0" dateCreated="10/02/2026 11:09:38" dateLastModified="10/02/2026 11:15:33" trackingId="751ef8e4-2ee9-4413-a3f0-9c87770adf81" DN="Data Trace Settings">
             <AccessInfos />
-            <ChildEntities />
+            <ChildEntities>
+              <Entity type="DataTrace" subtype="Nex" id="3a46c5c5-fbd2-4f47-b31e-2750d929cdf4" name="DataTrace0" version="0" dateCreated="10/02/2026 11:14:50" dateLastModified="10/02/2026 11:15:33" trackingId="8caed450-57aa-4fce-9096-4afb318a0820" DN="DataTrace0">
+                <AccessInfos />
+                <ChildEntities>
+                  <Entity type="DataTraceConfig" subtype="Nex" id="f9dc37ba-68eb-4fd0-935f-e489c39bc377" name="Config" version="0" dateCreated="10/02/2026 11:14:50" dateLastModified="10/02/2026 11:15:33" trackingId="e7320f91-1565-46cf-b27f-cb35a85a50f4" hash="0b44c307219594482d097cd2f27e878f">
+                    <AccessInfos />
+                    <ChildEntities>
+                      <Entity type="NexDataTraceConfig" subtype="" id="62418897-c2d5-48e2-9bd2-211a204742af" name="Config" version="0" dateCreated="10/02/2026 11:14:51" dateLastModified="10/02/2026 11:14:51" trackingId="f70d146f-eca8-470c-a9dc-49c9a8c35d30">
+                        <AccessInfos />
+                        <ChildEntities />
+                      </Entity>
+                    </ChildEntities>
+                  </Entity>
+                  <Entity type="DataTraceSet" subtype="" id="9927fa20-a0ba-4c2a-8f2d-6f9d1a3c24d8" name="DataTraceSet" version="0" dateCreated="10/02/2026 11:14:51" dateLastModified="10/02/2026 11:15:33" trackingId="39519f3b-7fca-494a-ba7b-16cd31748810" hash="b8917b8f71dd061b371f3ba82cde734b">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="DataTraceResults" subtype="Internal" id="26f29d80-5816-4424-b5e4-aca76ff357a7" name="DataTraceResults" version="0" dateCreated="10/02/2026 11:14:51" trackingId="cec263ea-ad66-4df4-86ff-95aeecc7d0a2">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="DataTraceResults" subtype="External" id="96c74317-68da-423d-b618-8bc2fdcf2fce" name="ExternalDataTraceResults" version="0" dateCreated="10/02/2026 11:14:51" trackingId="2ce7915a-6cea-4af2-91cb-071e6d256b47">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="DataTraceEnvironment" subtype="" id="cfc34837-1300-402d-975e-fe73c90a2231" name="DataTraceEnvironment" version="0" dateCreated="10/02/2026 11:14:51" dateLastModified="10/02/2026 11:15:33" trackingId="a8fd9f08-aa92-4cae-96b7-092d25735e0d" hash="184b983dac04f04094be930088005f90">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="NexDataTraceVisionData" subtype="" id="e14d46a7-9727-4be8-918b-45a0f15939b9" name="NexDataTraceVisionData" version="0" dateCreated="10/02/2026 11:14:51" trackingId="ab27b39c-4125-4b1e-898e-f423f196f1d2">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                  <Entity type="MotionMonitorSetting" subtype="" id="531d2b5f-018f-4180-b497-fb6de85914e4" name="NexDataTraceVisionData" version="0" dateCreated="10/02/2026 11:14:51" dateLastModified="10/02/2026 11:14:51" trackingId="0977d2b7-327f-4103-b669-883fc2ef8b33">
+                    <AccessInfos />
+                    <ChildEntities />
+                  </Entity>
+                </ChildEntities>
+              </Entity>
+            </ChildEntities>
           </Entity>
           <Entity type="OpcUaSetting" subtype="" id="74e003cf-1163-4965-9667-7db4af01bfb6" name="OPC UA Settings0" version="0" dateCreated="10/02/2026 11:09:38" dateLastModified="10/02/2026 11:09:39" trackingId="9ed9b58e-3a43-48c5-b685-c73b7568b101" DN="OPC UA Settings">
             <AccessInfos />
