@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <DataType Name="Data Types1" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+    <DataType Name="eEncoderMode" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+      <DataType Name="Incremental" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Absolute" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="ST_FCLCfg" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="6" OffsetType="NJ">
+      <DataType Name="CountCfg" BaseType="ATC_E\FCL\ST_CountCfg" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="LimThreshCfg" BaseType="ATC_E\FCL\ST_LimitsAndThresholds" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Gains" BaseType="ATC_E\FCL\ST_Gains" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="ST_Gains" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="NJ">
+      <DataType Name="Kspeed" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Speed Proportional Gain" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Kpos" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Position Proportional Gain" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="Kff" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Feed Forward Gain" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="ST_CountCfg" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="2" OffsetType="NJ">
+      <DataType Name="CountMode" BaseType="_eMC_COUNT_MODE" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Currently, in rotary mode, minimum position can only be zero." OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="RotaryModulo" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Modulo used in rotary mode." OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="ST_LimitsAndThresholds" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="1" OffsetType="NJ">
+      <DataType Name="SpeedLimit" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Symmetrical speed limit" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="EnableSoftLimits" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Enable/Disable position limits" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PosSoftLimit" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Positive soft limit. Only used when count mode is linear." OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NegSoftLimit" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Negative soft limit. Only used when count mode is linear." OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FeLimit" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Following error threshold" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="InPosWindow" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="InPosition Window" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SpeedZeroWhenInPosReached" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="TRUE: when InPosition flag of the Status output is TRUE, Speed output is set to zero." OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="SpeedOutputDeadBand" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="If absolute speed output value of the internal PID is smaller than this parameter =&gt;speed output will be zero." OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="ST_FCLStatus" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="5" OffsetType="NJ">
+      <DataType Name="SpeedLimitReached" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="PosSoftLimitReached" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="NegSoftLimitReached" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FollowingErrorExceeded" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="FollowingError" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Actual value of the following error" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="InPosition" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="ST_EncoderCfg" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="4" OffsetType="NJ">
+      <DataType Name="EncMode" BaseType="ATC_E\FCL\eEncoderMode" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CountMaxVal" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Maximum value that can take PositionValue input" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="CountMinVal" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="Minimum value that can take Position Value input" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+    <DataType Name="ST_UserRatio" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="3" OffsetType="NJ">
+      <DataType Name="G1" BaseType="LREAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="user units = (encoder_units) x( G1/G2)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+      <DataType Name="G2" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="user units = (encoder_units) x( G1/G2)" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" />
+    </DataType>
+  </DataType>
+</data>

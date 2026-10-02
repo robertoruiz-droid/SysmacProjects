@@ -1,0 +1,19 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=UINT	N=cipherTextLength	IV=230	G=VAR
+++D=UINT	N=plainTextLength	IV=22	G=VAR
+++D=UINT	N=blockLength	IV=10	G=VAR
+++D=STRING[256]	N=paddedCipherText	G=VAR
+++D=UINT	N=offset	G=VAR
+++D=STRING[2]	N=c	G=VAR
+++D=STRING[256]	N=plainText	G=VAR
+++D=STRING[256]	N=cipherText	G=VAR
+++D=UINT	N=i	G=VAR
+++D=UINT	N=offsetc	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=EN	Ord=0	RO=1	G=VAR_INPUT
+++D=STRING[256]	N=textIn	Ord=1	G=VAR_INPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
++GN=RETURN	GA=Return	GVT=ReturnGroup
+++D=STRING[256]	N=DecryptBifidCipherWithPadding	G=RETURN

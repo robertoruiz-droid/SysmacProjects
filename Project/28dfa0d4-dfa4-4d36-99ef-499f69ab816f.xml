@@ -1,0 +1,23 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR_GLOBAL	GVT=GlobalNamespaceGroup
+++D=_sAXIS_REF	N=VirtualX	AT=MC://_MC_AX[1]	RO=1	Const=1	G=VAR_GLOBAL
+++D=UINT	N=M1_FrequencyRefderence	AT=ECAT://node#16/Frequency Reference	G=VAR_GLOBAL
+++D=WORD	N=M1_Command	AT=ECAT://node#16/Command	G=VAR_GLOBAL
+++D=ARRAY[0..50000] OF _sMC_CAM_REF	N=CamProfile0	IV=None	RO=1	G=VAR_GLOBAL
+++D=DINT	N=M1_Posicion	AT=ECAT://node#16/d298 (32bit) - Current Feedback Position Monitor	G=VAR_GLOBAL
+++D=UINT	N=M1_Digital_Inputs	AT=ECAT://node#16/Output_S006 - Operation command	G=VAR_GLOBAL
+++D=INT	N=M1_position_ValueMSB	AT=ECAT://node#16/Output_S020 - Positioning Data via Communication (MSB)	G=VAR_GLOBAL
+++D=UINT	N=M1_position_ValueLSB	AT=ECAT://node#16/Output_S021 - Positioning Data via Communication (LSB)	G=VAR_GLOBAL
+++D=WORD	N=M1_Status	AT=ECAT://node#16/Status	G=VAR_GLOBAL
+++D=LREAL	N=Velocidad	IV=LREAL#10000	G=VAR_GLOBAL
+++D=LREAL	N=Posicion	G=VAR_GLOBAL
+++D=LREAL	N=Acceleracion	G=VAR_GLOBAL
+++D=LREAL	N=Deceleracion	G=VAR_GLOBAL
+++D=LREAL	N=Jerk	G=VAR_GLOBAL
+++D=INT	N=M1_Presetposition_ValueMSB	AT=ECAT://node#16/Output_d240 - Preset Position (MSB)	G=VAR_GLOBAL
+++D=UINT	N=M1_Presetposition_ValueLSB	AT=ECAT://node#16/Output_d241 - Preset Position (LSB)	G=VAR_GLOBAL
+++D=BOOL	N=Reset	G=VAR_GLOBAL
+++D=UINT	N=M1_outputFrequency	AT=ECAT://node#16/Output Frequency Monitor	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=Encoder_Axis	AT=MC://_MC_AX[0]	RO=1	Const=1	G=VAR_GLOBAL
+++D=_sAXIS_REF	N=VirtualCAM	AT=MC://_MC_AX[2]	RO=1	Const=1	G=VAR_GLOBAL

@@ -1,0 +1,27 @@
+[SLWD version=1.0]
+_EN=Variables
++GN=VAR	GVT=DefaultGroup
+++D=BYTE	N=c_byAppID	IV=16#81	Const=1	G=VAR
+++D=LREAL	N=lrMasterPos	G=VAR
+++D=LREAL	N=lrOldMasterPos	G=VAR
+++D=LREAL	N=lrSlavePos	G=VAR
+++D=LREAL	N=lrOldSlavePos	G=VAR
+++D=LREAL	N=lrHalfModulo	G=VAR
+++D=LREAL	N=lrDeltaMaster	G=VAR
+++D=LREAL	N=lrDeltaSlave	G=VAR
+++D=LREAL	N=lrFollowingError	G=VAR
+++D=LREAL	N=lrFollowErrorCycles	G=VAR	Com=Used for calculating the "distance" (following error) between master and slave in rotay mode.
+++D=ATC_E\FCL\Internals\FB_ComposeErrorIDEx	N=fbComposeErrrorIDEx	G=VAR
+++D=ATC_E\FCL\ST_CountCfg	N=stCountCfg	G=VAR	Com=Temporal CountCfg, read when FB is enabled.
+++D=WORD	N=wExtErrorID	G=VAR
++GN=VAR_INPUT	GA=InputOutput	GVT=EdgeInputOutputGroup
+++D=BOOL	N=Enable	Ord=0	G=VAR_INPUT
+++D=LREAL	N=Pos1	Ord=1	G=VAR_INPUT
+++D=LREAL	N=Pos2	Ord=2	G=VAR_INPUT
+++D=ATC_E\FCL\ST_CountCfg	N=CountCfg	Ord=3	G=VAR_INPUT
+++D=BOOL	N=Enabled	Ord=4	G=VAR_OUTPUT
+++D=LREAL	N=Slip	Ord=5	G=VAR_OUTPUT	Com=Measured slip
+++D=BOOL	N=Error	Ord=6	G=VAR_OUTPUT
+++D=WORD	N=ErrorID	Ord=7	G=VAR_OUTPUT
+++D=DWORD	N=ErrorIDEx	Ord=8	G=VAR_OUTPUT
++GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
