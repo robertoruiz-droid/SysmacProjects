@@ -48,7 +48,7 @@
       <Comment>Axis Variable Axis Current Value Actual Current Position</Comment>
       <ColourA>255</ColourA>
       <ColourR>255</ColourR>
-      <ColourG>0</ColourG>
+      <ColourG>255</ColourG>
       <ColourB>0</ColourB>
       <Historical>false</Historical>
       <DataType>System.Double</DataType>

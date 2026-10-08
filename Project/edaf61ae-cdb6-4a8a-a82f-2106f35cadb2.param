@@ -2,7 +2,7 @@
 <parameters>
   <parameter index="A001" value="600" />
   <parameter index="A014" value="1" />
-  <parameter index="d003" value="50" />
+  <parameter index="d003" value="20" />
   <parameter index="d014" value="3" />
   <parameter index="d015" value="1000" />
   <parameter index="d201" value="50" />
