@@ -84,6 +84,7 @@ _EN=Variables
 ++D=BOOL	N=RtrigRunFW_Q	G=VAR
 ++D=R_TRIG	N=RtrigRunRW	G=VAR
 ++D=BOOL	N=RtrigRunRW_Q	G=VAR
+++D=BOOL	N=Gaindu	G=VAR
 +GN=VAR_EXTERNAL	GA=External	GVT=ExternalGroup
 ++D=WORD	N=M1_Command	G=VAR_EXTERNAL
 ++D=DINT	N=M1_Posicion	G=VAR_EXTERNAL
