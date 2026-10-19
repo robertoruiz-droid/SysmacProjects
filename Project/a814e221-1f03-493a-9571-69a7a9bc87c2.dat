@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="10507520" Revision="17039360" IONodeID="87003934-98a9-446c-aa23-5778abe4d7c6" DeviceName="N2" SerialNo="0" IsEnabled="1">
+  <Feature Values="SupportFbViewProtection, SupportFbChangeProtection, SupportSraParameter, SupportEipUnitConnectionSettings, SupportMixtureOfEipUnitPortAndBuiltInEipPort" />
+  <PdoM PMIndex="6656" PMN="TxSlaves" PMIOD="I">
+    <Pdo PID="0648b472-aa5e-4dcf-9a6a-af837da4ab0c" Index="24576" SIndex="1" Name="FSoEMaster_Instance0" DSC="" PBit="56" PD="I" PV="H" PBO="0" BTBL="56" LEMI="3" SPId="f15e6aaa-ba94-46ed-b38f-280bba067b00" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="47329dbc-8ce3-4eaf-95e7-ef45a3c2037f" Index="24576" SIndex="2" Name="Padding" DSC="" PBit="8" PD="I" PV="H" PBO="56" BTBL="8" LEMI="0" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..0] OF BYTE" CipType="None" />
+  </PdoM>
+  <PdoM PMIndex="5632" PMN="RxSlaves" PMIOD="O">
+    <Pdo PID="18506f29-a1f2-48de-acf7-14372634f7e8" Index="28672" SIndex="1" Name="FSoEMaster_Instance0" DSC="" PBit="56" PD="O" PV="H" PBO="0" BTBL="56" LEMI="3" SPId="85228b3c-4756-486a-99f5-eb1391616058" PDT="ARRAY [0..6] OF BYTE" CipType="None" />
+    <Pdo PID="3175e935-8078-4464-b6f5-1408968221ae" Index="28672" SIndex="2" Name="Padding" DSC="" PBit="8" PD="O" PV="H" PBO="56" BTBL="8" LEMI="0" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..0] OF BYTE" CipType="None" />
+  </PdoM>
+  <PdoM PMIndex="6657" PMN="TxVariables" PMIOD="I">
+    <Pdo PID="4531327c-15f4-44b4-85c1-cdce1fb654b0" Index="24580" SIndex="1" Name="Safety CPU Status" DSC="Status of Safety CPU Unit for monitoring" PBit="16" PD="I" PV="V" PBO="64" BTBL="16" LEMI="2147483648" SPId="00000000-0000-0000-0000-000000000000" PDT="UINT" CipType="None">
+      <SubPort PID="5e678e5d-f5c1-4d85-adc8-b7935a567d27" Name="Normal Operating" DSC="Safety program is running without any fault and all safety master connections are established" Offset="0" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="f636e111-0fb2-4f83-95b1-1f2d415368d2" Name="Program Operating" DSC="Safety program is running" Offset="1" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="2517d355-48a2-4c82-b83d-01c33edec3d3" Name="Program No Fault" DSC="No system event more than minor fault occurs" Offset="2" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="81b9b616-7ee0-446c-98c8-3617ffc0fefa" Name="Safety Master Connection Status" DSC="All safety master connections are established" Offset="3" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="8b4ec58c-4a67-45ef-b34b-c4dd31ae5f12" Name="FSoE Master Connection Status" DSC="All FSoE master connections are established." Offset="4" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="6063f616-0297-45d2-b544-3984278c94c2" Name="CIP Safety Originator Connection Status" DSC="All CIP Safety Originator connections are established" Offset="5" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="05fb2eb2-8a72-4593-a25f-6548fa6bccba" Name="CIP Safety Target Connection Status" DSC="No error exists on CIP Safety Target connections" Offset="6" PD="I" BTBL="1" PDT="BOOL" PV="V" />
+      <SubPort PID="db537e51-be36-4ddb-aa47-b799e660421a" Name="Reserved" DSC="" Offset="7" PD="I" BTBL="9" PDT="BOOL" PV="H" />
+    </Pdo>
+  </PdoM>
+  <PdoM PMIndex="5633" PMN="RxVariables" PMIOD="O" />
+  <PdoM PMIndex="6658" PMN="TxCIPSafety" PMIOD="I">
+    <Pdo PID="ecde0183-4535-44ed-9567-bbe0a9b0fee9" Index="24578" SIndex="1" Name="CIPTarget_Instance0" DSC="" PBit="376" PD="I" PV="H" PBO="80" BTBL="376" LEMI="2" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..46] OF BYTE" CipType="TargetInputAssembly">
+      <BridgeNodes>
+        <BridgeNode>00000000-0000-0000-0000-000000000000</BridgeNode>
+      </BridgeNodes>
+    </Pdo>
+    <Pdo PID="15510891-b548-42f0-b457-ba824b305ea8" Index="24578" SIndex="2" Name="Padding" DSC="" PBit="8" PD="I" PV="H" PBO="456" BTBL="8" LEMI="0" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..0] OF BYTE" CipType="None" />
+  </PdoM>
+  <PdoM PMIndex="5634" PMN="RxCIPSafety" PMIOD="O">
+    <Pdo PID="0bb60217-8d54-44c2-b4d4-2f9113e76cfc" Index="28674" SIndex="1" Name="CIPTarget_Instance0" DSC="" PBit="448" PD="O" PV="H" PBO="64" BTBL="448" LEMI="2" SPId="00000000-0000-0000-0000-000000000000" PDT="ARRAY [0..55] OF BYTE" CipType="TargetInputAssembly">
+      <BridgeNodes>
+        <BridgeNode>00000000-0000-0000-0000-000000000000</BridgeNode>
+      </BridgeNodes>
+    </Pdo>
+  </PdoM>
+</Module>

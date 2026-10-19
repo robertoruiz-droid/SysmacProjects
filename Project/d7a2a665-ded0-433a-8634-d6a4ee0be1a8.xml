@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CpuRackNXBusMaster>
+  <CpuRackNXBusMaster VenderID="1" ProductCode="457265152" Revision="21364736" IONodeID="ae454b11-fad1-4db6-98c3-f38438782ce8" WaitTimeForAddition="3" CheckSerialNo="0" FailSoftOperation="0">
+    <DirectIOPort IOPortID="8b26b1ba-937f-462a-a1a6-8889b9deea36" UnitNumber="1" RelativeAtPath="status/registration" />
+    <DirectIOPort IOPortID="8f9ef8c5-1df0-47da-b364-14c08b237d3b" UnitNumber="1" RelativeAtPath="status/msg:enabled" />
+    <DirectIOPort IOPortID="591cc338-2380-41ad-a50e-543fa0c128a0" UnitNumber="1" RelativeAtPath="status/io:active" />
+    <DirectIOPort IOPortID="27c0e9c5-0b09-4729-9d2f-2ae32c3ad0b0" UnitNumber="1" RelativeAtPath="status/error" />
+    <DirectIOPort IOPortID="f756e2ae-caad-4481-8a2a-eadd558677ae" UnitNumber="1" RelativeAtPath="status/synctime:in" />
+    <DirectIOPort IOPortID="516892dd-c873-4f0b-9404-e7ebd3b1b1e7" UnitNumber="1" RelativeAtPath="status/synctime:out" />
+    <DirectIOPort IOPortID="4f12a441-c506-4dfb-bd67-650e9aa866f2" UnitNumber="2" RelativeAtPath="status/registration" />
+    <DirectIOPort IOPortID="94e2e836-fea3-45eb-ab9f-7fd19bbd23aa" UnitNumber="2" RelativeAtPath="status/msg:enabled" />
+    <DirectIOPort IOPortID="7aac3c35-9959-42c6-968b-f1cad8e7f9ff" UnitNumber="2" RelativeAtPath="status/io:active" />
+    <DirectIOPort IOPortID="06faa868-8e6c-45b4-8d1c-f657b443e7f8" UnitNumber="2" RelativeAtPath="status/error" />
+    <DirectIOPort IOPortID="be632d53-0bb6-4b73-b716-3677e286c616" UnitNumber="2" RelativeAtPath="status/synctime:in" />
+    <DirectIOPort IOPortID="7265417b-f0a8-4b77-9085-2d318382bbc5" UnitNumber="2" RelativeAtPath="status/synctime:out" />
+    <DirectIOPort IOPortID="66b64eff-f946-4889-b734-156e8a9cf4f2" UnitNumber="3" RelativeAtPath="status/registration" />
+    <DirectIOPort IOPortID="2d3635b9-9b63-4b99-8a39-e8f68b90716a" UnitNumber="3" RelativeAtPath="status/msg:enabled" />
+    <DirectIOPort IOPortID="8236b11e-d969-42a4-bbf6-e3c2f4a90478" UnitNumber="3" RelativeAtPath="status/io:active" />
+    <DirectIOPort IOPortID="a02f7f3e-3256-473c-be0c-b02b0d4818c2" UnitNumber="3" RelativeAtPath="status/error" />
+    <DirectIOPort IOPortID="088d45e7-85bb-47a7-bdbe-14aa8f552adc" UnitNumber="3" RelativeAtPath="status/synctime:in" />
+    <DirectIOPort IOPortID="fd11bd20-972b-4967-935a-2b8ac84e1cdc" UnitNumber="3" RelativeAtPath="status/synctime:out" />
+  </CpuRackNXBusMaster>
+</CpuRackNXBusMaster>

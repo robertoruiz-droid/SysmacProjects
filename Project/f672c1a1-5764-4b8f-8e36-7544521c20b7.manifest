@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest manifestSchemaVersion="1" modelSchemaVersion="1">
+  <Application applicationName="sysmac" applicationVersion="Infinity" />
+  <Solution solutionName="Seminario_Ethercat" id="f672c1a1-5764-4b8f-8e36-7544521c20b7" trackingId="e8c4a343-3227-430c-b088-8443fa232d2b" solutionSchemaVersion="2">
+    <ApplicationFeatures>
+      <ApplicationFeature name="SafetyDataProtection" />
+      <ApplicationFeature name="Safety_SL5x00_V1_4" />
+      <ApplicationFeature name="SraParametersSupportedSlave" />
+      <ApplicationFeature name="Safety_DataProtectionV2_0Using" />
+      <ApplicationFeature name="Safety" />
+      <ApplicationFeature name="V102Project" />
+      <ApplicationFeature name="DBCon V2.04" />
+      <ApplicationFeature name="SetUnit NX502-1500 Ver. 1.70" />
+      <ApplicationFeature name="TransferInfoAndBuildResultsEntitiesReduced" />
+    </ApplicationFeatures>
+  </Solution>
+</Manifest>

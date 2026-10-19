@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaServerSimSettings>
+  <PublishedVariables>
+    <OnlyNetworkPublishVariablesFlag Selected="False" />
+  </PublishedVariables>
+  <RoleSettings>
+    <FunctionBlockInstance />
+  </RoleSettings>
+  <StructNodeExpansion>False</StructNodeExpansion>
+  <ArrayNodeExpansion>False</ArrayNodeExpansion>
+</OpcUaServerSimSettings>
